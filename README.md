@@ -7,15 +7,17 @@
 
 ## Technologies
 
-https://dbdiagram.io/  database design
+Database design with [dbdiagram](https://dbdiagram.io/)
 
 ## Design
 
 ## Wireframe
 
+Wireframes created with [WireframeSketcher](https://wireframesketcher.com)
+
 ## Database Models and Schema
 
-https://dbdiagram.io
+[dbdiagram](https://dbdiagram.io/)
 
 ```
 Table user {
