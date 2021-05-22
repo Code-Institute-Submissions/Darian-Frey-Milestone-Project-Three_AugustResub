@@ -7,7 +7,16 @@
 
 ## Technologies
 
-Database design with [dbdiagram](https://dbdiagram.io/)
+The Technologies used in this project are listed bellow.
+
+- [DBdiagram](https://dbdiagram.io/)
+- [Materialize](https://materializecss.com//)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5/)
+- [CSS3](https://en.wikipedia.org/wiki/CSS/)
+- [MongoDB](https://www.mongodb.com//)
+- [Heroku](https://www.heroku.com//)
+- [GitHub](https://github.com/Darian-Frey/)
+- [Gitpod](https://www.gitpod.io//)
 
 ## Design
 
