@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Reviews</title>
-</head>
+<h2>I'm extending base.html</h2>
 
-<body>
-    {% for books in books %}
-    {{ books.title }}<br>
-    {{ books.author }}<br>
-    {{ books.genre }}<br>
-    {{ books.buy_link }}<br>
-    {{ books.image_url }}<br>
-    {{ books.synopsis }}<br>
-    {{ books.review }}<br>
-    {{ books.created_by }}<br>
-    {{ books.rating }}<br>
-    {{ books.date_created }}<br>
-    {% endfor %}
-</body>
-
-</html>
+{% for book in books %}
+{{ books.title }}<br>
+{{ books.author }}<br>
+{{ books.genre }}<br>
+{{ books.buy_link }}<br>
+{{ books.image_url }}<br>
+{{ books.synopsis }}<br>
+{{ books.review }}<br>
+{{ books.created_by }}<br>
+{{ books.rating }}<br>
+{{ books.date_created }}<br>
+{% endfor %}
+{% endblock %}
