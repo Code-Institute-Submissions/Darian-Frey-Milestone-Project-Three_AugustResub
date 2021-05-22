@@ -10,13 +10,14 @@
 The Technologies used in this project are listed bellow.
 
 - [DBdiagram](https://dbdiagram.io/)
-- [Materialize](https://materializecss.com//)
+- [Materialize](https://materializecss.com/)
 - [HTML5](https://en.wikipedia.org/wiki/HTML5/)
 - [CSS3](https://en.wikipedia.org/wiki/CSS/)
-- [MongoDB](https://www.mongodb.com//)
-- [Heroku](https://www.heroku.com//)
+- [MongoDB](https://www.mongodb.com/)
+- [Heroku](https://www.heroku.com/)
 - [GitHub](https://github.com/Darian-Frey/)
-- [Gitpod](https://www.gitpod.io//)
+- [Gitpod](https://www.gitpod.io/)
+- [jQuery](https://jquery.com/)
 
 ## Design
 
