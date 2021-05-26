@@ -9,7 +9,7 @@
 
 The Technologies used in this project are listed bellow.
 
-- [DBdiagram](https://dbdiagram.io/)
+- [QuickDBD](https://app.quickdatabasediagrams.com//)
 - [Materialize](https://materializecss.com/)
 - [HTML5](https://en.wikipedia.org/wiki/HTML5/)
 - [CSS3](https://en.wikipedia.org/wiki/CSS/)
