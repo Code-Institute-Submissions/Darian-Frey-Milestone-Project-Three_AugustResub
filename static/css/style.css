@@ -5,3 +5,33 @@
 .flashes h4 {
     line-height: 2;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.social-links li a i {
+    margin-top: 10px;
+    width: 35px;
+    height: 35px;
+    padding: 12px 0;
+    border-radius: 25%;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background: #121212;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    border-radius: 50%;
+}
