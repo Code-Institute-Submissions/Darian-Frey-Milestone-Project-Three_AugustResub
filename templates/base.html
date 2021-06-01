@@ -30,7 +30,7 @@
                         <li><a href="{{ url_for('register') }}">Sign UP</a></li>
                         <li><a href="#">Reviews</a></li>
                         <li><a href="#">Add Review</a></li>
-                        <li><a href="#">Profile</a></li>
+                        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="#">Logout</a></li>
                     </ul>
                 </div>
@@ -45,7 +45,7 @@
                 <li><a href="{{ url_for('register') }}">Sign Up</a></li>
                 <li><a href="#">Reviews</a></li>
                 <li><a href="#">Add Review</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </div>
