@@ -19,6 +19,11 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+@app.route("/home")
+def home():
+    return render_template("index.html")
+
+
 @app.route("/get_reviews")
 def get_reviews():
     books = mongo.db.books.find()
@@ -28,7 +33,7 @@ def get_reviews():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # check i fusername already exists.
+        # check if fusername already exists.
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 

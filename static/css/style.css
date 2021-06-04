@@ -35,3 +35,7 @@ main {
 .social-links li a i:hover {
     border-radius: 50%;
 }
+
+.brand-logo {
+    white-space: nowrap;
+}
