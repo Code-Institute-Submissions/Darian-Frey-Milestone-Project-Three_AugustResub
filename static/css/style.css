@@ -39,3 +39,16 @@ main {
 .brand-logo {
     white-space: nowrap;
 }
+
+hr.divider {
+    border-width: 0.4rem;
+    border-color: #121212;
+    border-top-style: solid;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-bottom-style: initial;
+}
+
+.social-links li {
+    display: inline;
+}
