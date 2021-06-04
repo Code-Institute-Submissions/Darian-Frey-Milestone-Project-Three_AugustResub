@@ -52,3 +52,9 @@ hr.divider {
 .social-links li {
     display: inline;
 }
+
+body {
+    background: url("../images/alfons-morales-YLSwjSy7stw-unsplash.jpg") center center no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
