@@ -89,7 +89,8 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        books = mongo.db.books.find()
+        return render_template("profile.html", books=books, username=username)
 
     return redirect(url_for("login"))
 

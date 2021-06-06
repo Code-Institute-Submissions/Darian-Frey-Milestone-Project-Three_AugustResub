@@ -15,10 +15,10 @@
                     </h5>
                     <strong>Author: </strong>{{ books.author }}<br>
                     <strong>Genre: </strong>{{ books.genre }}<br>
-                    {{ books.synopsis }}<br>
-                    {{ books.review }}<br>
+                    <strong>Synopsis: </strong>{{ books.synopsis }}<br>
+                    <strong>Review: </strong>{{ books.review }}<br>
                     {{ books.rating }}<br>
-                    <small><em>Created by: {{ books.createdby }},<br>
+                    <small><em>Created by: <strong>{{ books.createdby }}</strong>,<br>
                             {{ books.datecreated }}</em></small>
                     <div class="card-action">
                         <a href="{{ books.buylink }}">Buy this book!</a>
