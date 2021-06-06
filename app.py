@@ -1,4 +1,5 @@
 import os
+from datetime import date
 from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
@@ -16,6 +17,8 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
+date = date.today()
 
 
 @app.route("/")
@@ -101,7 +104,7 @@ def profile(username):
 
 @app.route("/addreview", methods=["GET", "POST"])
 def addreview():
-   # This will add a new book review to the user db
+    # This will add a new book review to the user db
     if 'user' in session:
         if request.method == "POST":
             # define our dict
@@ -117,17 +120,46 @@ def addreview():
                 "review": request.form.get("review"),
                 "createdby": session["user"],
                 "rating": request.form.get("rating") or default_rating,
-                "datecreated": request.form.get("datecreated"),
+                "datecreated": date.strftime("%d %b %Y")
             }
             mongo.db.books.insert_one(book)
             flash("Book Successfully Added")
-            return redirect(url_for("profile"))
+            return redirect(url_for("profile", username=session["user"]))
 
         return render_template("addreview.html")
 
     else:
         flash("You must log in first")
         return redirect(url_for("login"))
+
+
+@app.route("/edit_review/<review_id>", methods=["GET", "POST"])
+def edit_review(review_id):
+    if request.method == "POST":
+        # default values if fields are left blank
+        default_url = ("https://www.bookdepository.com/")
+        default_img = ("/static/images/no_cover.png")
+        default_rating = "No Stars Awarded"
+        update = {
+            "title": request.form.get("title"),
+            "author": request.form.get("author"),
+            "genre": request.form.get("genre"),
+            "published": request.form.get("published"),
+            "cover": request.form.get("cover") or default_img,
+            "buy": request.form.get("buy") or default_url,
+            "synopsis": request.form.get("synopsis"),
+            "review": request.form.get("review"),
+            "rating": request.form.get("star") or default_rating,
+            "created_by": session["user"],
+            "date_created": date.strftime("%d %b %Y")
+        }
+        mongo.db.reviews.update({"_id": ObjectId(review_id)}, update)
+        flash("Your review has been updated")
+        return redirect(url_for("profile", username=session["user"]))
+
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    reviews = mongo.db.reviews.find().sort("title", 1)
+    return render_template("edit_review.html", review=review, reviews=reviews)
 
 
 @app.route("/logout")
