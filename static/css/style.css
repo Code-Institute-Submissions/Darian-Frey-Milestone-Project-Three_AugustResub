@@ -6,12 +6,6 @@
     line-height: 2;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
 main {
     flex: 1 0 auto;
 }
@@ -57,4 +51,10 @@ body {
     background: url("../images/alfons-morales-YLSwjSy7stw-unsplash.jpg") center center no-repeat fixed;
     background-size: cover;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-cover {
+    height: auto;
 }

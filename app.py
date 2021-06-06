@@ -24,7 +24,7 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/get_reviews")
+@app.route("/get_reviews", methods=["GET"])
 def get_reviews():
     books = mongo.db.books.find()
     return render_template("allreviews.html", books=books)
