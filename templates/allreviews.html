@@ -5,11 +5,12 @@
     <div class="col s12 m8 offset-m2">
         {% for books in books %}
         <div class="card horizontal">
-            <div class="">
-                <img class="responsive book-cover" src="{{ books.imageurl }}" alt="Book cover">
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
+            <div class="card-content">
+                <div class="col s12 m4">
+                    <img class="responsive book-cover" src="{{ books.imageurl }}" alt="Book cover">
+                </div>
+
+                <div class="col s12 m8">
                     <h5 class="center-align light-blue-text text-darken-4">
                         {{ books.title }}<br>
                     </h5>
