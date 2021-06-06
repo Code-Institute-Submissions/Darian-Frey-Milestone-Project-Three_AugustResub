@@ -28,7 +28,7 @@
                         <li><a href="{{ url_for('home') }}">Home</a></li>
                         {% if session.user %}
                         <li><a href="{{ url_for('get_reviews') }}">Reviews</a></li>
-                        <li><a href="#">Add Review</a></li>
+                        <li><a href="{{ url_for('addreview') }}">Add Review</a></li>
                         <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                         <li><a href="{{ url_for('logout') }}">Logout</a></li>
                         {% else %}
@@ -46,7 +46,7 @@
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 {% if session.user %}
                 <li><a href="{{ url_for('get_reviews') }}">Reviews</a></li>
-                <li><a href="#">Add Review</a></li>
+                <li><a href="{{ url_for('addreview') }}">Add Review</a></li>
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="{{ url_for('logout') }}">Logout</a></li>
                 {% else %}
@@ -58,7 +58,7 @@
 
     </header>
 
-    <section >
+    <section>
         <!--flash messages-->
         {% with messages = get_flashed_messages() %}
         {% if messages %}

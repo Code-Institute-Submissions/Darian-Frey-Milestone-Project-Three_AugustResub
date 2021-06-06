@@ -21,11 +21,13 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
+    # Landing page
     return render_template("index.html")
 
 
 @app.route("/get_reviews", methods=["GET"])
 def get_reviews():
+    # Displays all reviews
     books = mongo.db.books.find()
     return render_template("allreviews.html", books=books)
 
@@ -33,11 +35,12 @@ def get_reviews():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # check if fusername already exists.
+        # check if username already exists.
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
+            # Informs user that the user name is already used
             flash("Username already taken, please choose another.")
             return redirect(url_for("register"))
 
@@ -89,10 +92,42 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
+        # Shows all reviews written by user
         books = mongo.db.books.find()
         return render_template("profile.html", books=books, username=username)
 
     return redirect(url_for("login"))
+
+
+@app.route("/addreview", methods=["GET", "POST"])
+def addreview():
+   # This will add a new book review to the user db
+    if 'user' in session:
+        if request.method == "POST":
+            # define our dict
+            default_img = ("static/images/book-3088782_640.png")
+            default_rating = "No Stars Awarded"
+            book = {
+                "title": request.form.get("title"),
+                "author": request.form.get("author"),
+                "genre": request.form.get("genre"),
+                "buylink": request.form.get("buylink"),
+                "imageurl": request.form.get("imageurl") or default_img,
+                "synopsis": request.form.get("synopsis"),
+                "review": request.form.get("review"),
+                "createdby": session["user"],
+                "rating": request.form.get("rating") or default_rating,
+                "datecreated": request.form.get("datecreated"),
+            }
+            mongo.db.books.insert_one(book)
+            flash("Book Successfully Added")
+            return redirect(url_for("profile"))
+
+        return render_template("addreview.html")
+
+    else:
+        flash("You must log in first")
+        return redirect(url_for("login"))
 
 
 @app.route("/logout")
