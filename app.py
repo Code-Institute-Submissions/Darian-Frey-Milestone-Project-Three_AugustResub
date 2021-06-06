@@ -133,8 +133,8 @@ def addreview():
         return redirect(url_for("login"))
 
 
-@app.route("/edit_review/<review_id>", methods=["GET", "POST"])
-def edit_review(review_id):
+@app.route("/editreview/<booksid>", methods=["GET", "POST"])
+def editreview(booksid):
     if request.method == "POST":
         # default values if fields are left blank
         default_url = ("https://www.bookdepository.com/")
@@ -153,13 +153,12 @@ def edit_review(review_id):
             "created_by": session["user"],
             "date_created": date.strftime("%d %b %Y")
         }
-        mongo.db.reviews.update({"_id": ObjectId(review_id)}, update)
+        mongo.db.books.update({"_id": ObjectId(booksid)}, update)
         flash("Your review has been updated")
         return redirect(url_for("profile", username=session["user"]))
 
-    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
-    reviews = mongo.db.reviews.find().sort("title", 1)
-    return render_template("edit_review.html", review=review, reviews=reviews)
+    books = mongo.db.books.find_one({"_id": ObjectId(booksid)})
+    return render_template("editreview.html", books=books)
 
 
 @app.route("/logout")

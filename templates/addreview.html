@@ -73,11 +73,16 @@
                 </div>
             </div>
 
-            <!--Add review button-->
-            <div class="row">
-                <button type="submit" class="col s6 offset-s3 m4 offset-m4 btn-small">
-                    Add Review
-                </button>
+            <!--Save or Cancel-->
+            <div class="row center-align">
+                <div>
+                    <a href="{{ url_for('profile', username=session['user']) }}" class="btn-small">
+                        Cancel
+                    </a>
+                    <button class="btn-small save-btn" type="submit">
+                        Save
+                    </button>
+                </div>
             </div>
         </div>
     </form>

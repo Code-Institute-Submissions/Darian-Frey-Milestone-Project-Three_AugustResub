@@ -28,7 +28,15 @@
                     <small><em>Created by: <strong>{{ books.createdby }}</strong>,<br>
                             {{ books.datecreated }}</em></small>
                     <div class="card-action">
-                        <a href="{{ books.buylink }}">Buy this book!</a>
+                        <div class="rec_btn_container">
+
+                            <a class="btn btn-primary btn-xl js-scroll-trigger rec_btn"
+                                href="{{ url_for('editreview', booksid=books._id )}}"><i class="fas fa-edit"></i>
+                                Edit
+                            </a>
+                            <a class="btn btn-primary btn-xl js-scroll-trigger rec_btn" href="{{ books.buylink }}"
+                                target="_blank"><i class="fas fa-shopping-cart"></i> Buy</a>
+                        </div>
                     </div>
                 </div>
             </div>
