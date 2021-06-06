@@ -161,6 +161,13 @@ def editreview(booksid):
     return render_template("editreview.html", books=books)
 
 
+@app.route("/deletereview/<booksid>")
+def deletereview(booksid):
+    mongo.db.books.remove({"_id": ObjectId(booksid)})
+    flash("Review has been deleted")
+    return redirect(url_for("profile", username=session["user"]))
+
+
 @app.route("/logout")
 def logout():
     # remove user from session
