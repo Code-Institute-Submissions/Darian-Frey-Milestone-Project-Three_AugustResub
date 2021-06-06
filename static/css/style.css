@@ -55,6 +55,8 @@ body {
     flex-direction: column;
 }
 
-.book-cover {
+.responsive {
+    width: 100%;
+    max-width: 400px;
     height: auto;
 }
