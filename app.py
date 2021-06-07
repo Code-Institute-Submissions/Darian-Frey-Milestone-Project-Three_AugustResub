@@ -163,6 +163,7 @@ def editreview(booksid):
 
 @app.route("/deletereview/<booksid>")
 def deletereview(booksid):
+    # Delete review
     mongo.db.books.remove({"_id": ObjectId(booksid)})
     flash("Review has been deleted")
     return redirect(url_for("profile", username=session["user"]))
@@ -174,6 +175,16 @@ def logout():
     flash("You have been logged out.")
     session.pop("user")
     return redirect(url_for("login"))
+
+
+@app.route("/deleteprofile/<username>")
+def delete_profile(username):
+    # removes any reveiws created by user from db
+    mongo.db.books.delete_many({"createdby": session['user']})
+    mongo.db.username.remove({"_id": ObjectId(username)})
+    flash("Your account has been deleted")
+    session.clear()
+    return redirect(url_for("index"))
 
 
 if __name__ == "__main__":
