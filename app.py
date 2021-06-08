@@ -108,13 +108,14 @@ def addreview():
     if 'user' in session:
         if request.method == "POST":
             # define our dict
+            default_url = ("https://www.amazon.co.uk/")
             default_img = ("static/images/book.png")
             default_rating = "No Stars Awarded"
             book = {
                 "title": request.form.get("title"),
                 "author": request.form.get("author"),
                 "genre": request.form.get("genre"),
-                "buylink": request.form.get("buylink"),
+                "buylink": request.form.get("buylink") or default_url,
                 "imageurl": request.form.get("imageurl") or default_img,
                 "synopsis": request.form.get("synopsis"),
                 "review": request.form.get("review"),
@@ -137,7 +138,7 @@ def addreview():
 def editreview(booksid):
     if request.method == "POST":
         # default values if fields are left blank
-        default_url = ("https://www.bookdepository.com/")
+        default_url = ("https://www.amazon.co.uk/")
         default_img = ("static/images/book.png")
         default_rating = "No Stars Awarded"
         update = {
