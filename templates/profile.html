@@ -47,22 +47,14 @@
         </div>
         {% endif %}
         {% endfor %}
-    </div>
-</div>
-
-<div class="row">
-    <div class="col s12 m8 offset-m2">
         <div class="card-panel">
-            <div id="delete" class="tabcontent center-align">
-                <h4>Delete Profile</h4>
-                <div class="delete">
-                    <a class="btn btn-primary btn-xl js-scroll-trigger rec_btn" href="#"><i
-                            class="fas fa-shopping-cart"></i>
-                        Delete Account</a>
-                </div>
-            </div>
+            <button formmethod="POST" formaction="
+            {{ url_for('deleteprofile', userid=username._id) }}" class="btn btn-danger">
+                Delete Account
+            </button>
         </div>
     </div>
 </div>
+
 
 {% endblock %}

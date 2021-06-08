@@ -169,6 +169,14 @@ def deletereview(booksid):
     return redirect(url_for("profile", username=session["user"]))
 
 
+@app.route("/deleteprofile/<userid>")
+def deleteprofile(userid):
+    # Delete review
+    mongo.db.users.remove({"_id": ObjectId(userid)})
+    flash("Account Deleted!!", "warning")
+    return redirect(url_for("index"))
+
+
 @app.route("/logout")
 def logout():
     # remove user from session
@@ -176,15 +184,6 @@ def logout():
     session.pop("user")
     return redirect(url_for("login"))
 
-
-@app.route("/deleteprofile/<username>")
-def delete_profile(username):
-    # removes any reveiws created by user from db
-    mongo.db.books.delete_many({"createdby": session['user']})
-    mongo.db.username.remove({"_id": ObjectId(username)})
-    flash("Your account has been deleted")
-    session.clear()
-    return redirect(url_for("index"))
 
 
 if __name__ == "__main__":
