@@ -48,10 +48,13 @@
         {% endif %}
         {% endfor %}
         <div class="card-panel">
-            <button formmethod="POST" formaction="
-            {{ url_for('deleteprofile', userid=username._id) }}" class="btn btn-danger">
+            <div class="rec_btn_container">
+                <a class="btn btn-primary btn-xl js-scroll-trigger rec_btn"
+                href="{{ url_for('deleteprofile', userid=username._id )}}">
+                    <i class="far fa-minus-square"></i>
                 Delete Account
-            </button>
+                </a>
+            </div>
         </div>
     </div>
 </div>

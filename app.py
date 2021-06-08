@@ -171,8 +171,8 @@ def deletereview(booksid):
 
 @app.route("/deleteprofile/<userid>")
 def deleteprofile(userid):
-    # Delete review
-    mongo.db.users.remove({"_id": ObjectId(userid)})
+    # Delete user
+    mongo.db.username.remove({"_id": ObjectId(userid)})
     flash("Account Deleted!!", "warning")
     return redirect(url_for("index"))
 
