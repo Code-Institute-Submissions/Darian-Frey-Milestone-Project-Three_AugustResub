@@ -108,7 +108,7 @@ def addreview():
     if 'user' in session:
         if request.method == "POST":
             # define our dict
-            default_img = ("static/images/book-3088782_640.png")
+            default_img = ("static/images/book.png")
             default_rating = "No Stars Awarded"
             book = {
                 "title": request.form.get("title"),
@@ -138,7 +138,7 @@ def editreview(booksid):
     if request.method == "POST":
         # default values if fields are left blank
         default_url = ("https://www.bookdepository.com/")
-        default_img = ("/static/images/no_cover.png")
+        default_img = ("static/images/book.png")
         default_rating = "No Stars Awarded"
         update = {
             "title": request.form.get("title"),
