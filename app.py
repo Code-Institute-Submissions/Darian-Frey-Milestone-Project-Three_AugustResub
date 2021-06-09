@@ -91,13 +91,16 @@ def login():
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from the db
-    username = mongo.db.users.find_one(
-        {"username": session["user"]})["username"]
+    user = mongo.db.users.find_one(
+        {"username": session["user"]})
+    username = user["username"]
+    userid = user["_id"]
 
     if session["user"]:
         # Shows all reviews written by user
         books = mongo.db.books.find()
-        return render_template("profile.html", books=books, username=username)
+        return render_template("profile.html",
+                               books=books, username=username, userid=userid)
 
     return redirect(url_for("login"))
 
@@ -109,7 +112,7 @@ def addreview():
         if request.method == "POST":
             # define our dict
             default_url = ("https://www.amazon.co.uk/")
-            default_img = ("static/images/book.png")
+            default_img = ("/static/images/book.png")
             default_rating = "No Stars Awarded"
             book = {
                 "title": request.form.get("title"),
@@ -173,9 +176,10 @@ def deletereview(booksid):
 @app.route("/deleteprofile/<userid>")
 def deleteprofile(userid):
     # Delete user
-    mongo.db.username.remove({"_id": ObjectId(userid)})
+    mongo.db.users.remove({"_id": ObjectId(userid)})
+    session.clear()
     flash("Account Deleted!!", "warning")
-    return redirect(url_for("index"))
+    return redirect(url_for("home"))
 
 
 @app.route("/logout")
@@ -184,7 +188,6 @@ def logout():
     flash("You have been logged out.")
     session.pop("user")
     return redirect(url_for("login"))
-
 
 
 if __name__ == "__main__":
