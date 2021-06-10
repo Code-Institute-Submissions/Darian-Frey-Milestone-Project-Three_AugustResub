@@ -1,11 +1,27 @@
 
 # Milestone Project 3
 
-## User Experience (UX)
+## [**Table of Contents**](#table-of-contents)
 
-## User Stories
+- [UX](#UX)
+- [User Stories](#User-Stories)
+- [Technologies](#Technologies)
+- [Design](#Design)
+- [Wireframe](#Wireframe)
+- [Database Models and Schema](#Database-Models-and-Schema)
+- [Media](#Media)
+- [Features](#Features)
+- [Testing](#Testing)
+- [Deployment](#Deployment)
+- [Credits & Acknowledgements](#Credits-&-Acknowledgements)
 
-## Technologies
+## **UX**
+
+## **User Stories**
+##### [Back to Table of Contents](#table-of-contents)
+
+## **Technologies**
+##### [Back to Table of Contents](#table-of-contents)
 
 The Technologies used in this project are listed bellow.
 
@@ -19,13 +35,16 @@ The Technologies used in this project are listed bellow.
 - [Gitpod](https://www.gitpod.io/)
 - [jQuery](https://jquery.com/)
 
-## Design
+## **Design**
+##### [Back to Table of Contents](#table-of-contents)
 
-## Wireframe
+## **Wireframe**
+##### [Back to Table of Contents](#table-of-contents)
 
 Wireframes created with [WireframeSketcher](https://wireframesketcher.com)
 
-## Database Models and Schema
+## **Database Models and Schema**
+##### [Back to Table of Contents](#table-of-contents)
 
 [QuickDBD](https://app.quickdatabasediagrams.com//)
 
@@ -56,12 +75,17 @@ DateCreated datetime
 <img src="Wireframes/quickdbd/QuickDBD.png"
      alt="Database design"/>
 
-## Media
+## **Media**
+##### [Back to Table of Contents](#table-of-contents)
 
-## Features
+## **Features**
+##### [Back to Table of Contents](#table-of-contents)
 
-## Testing
+## **Testing**
+##### [Back to Table of Contents](#table-of-contents)
 
-## Deployment
+## **Deployment**
+##### [Back to Table of Contents](#table-of-contents)
 
-## Credits & Acknowledgements
+## **Credits & Acknowledgements**
+##### [Back to Table of Contents](#table-of-contents)
