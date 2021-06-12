@@ -75,6 +75,10 @@ The Technologies used in this project are listed bellow.
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Wireframe**
+
+The wireframes for this project do not represent the final project.
+To view the wireframes click [here](https://github.com/Darian-Frey/Milestone-Project-Three/tree/master/Wireframes/pdf) for PDF and [here](https://github.com/Darian-Frey/Milestone-Project-Three/tree/master/Wireframes/images) for PNG files.
+
 ##### [Back to Table of Contents](#table-of-contents)
 
 Wireframes created with [WireframeSketcher](https://wireframesketcher.com)
