@@ -18,6 +18,20 @@
 ## **UX**
 
 ## **User Stories**
+
+- *"As a user, I want to immediately understand the purpose of the site"*
+- *"As a user, I want to create my own reviews."* 
+- *"As a user, I want to easily access my own content."* 
+- *"As a user, I want to edit reviews I have created."*
+- *"As a user, I want to control my own content."*  
+- *"As a user, I want to be able to delete reviews I have created."*  
+- *"As a user, I want to be able to delete my account."*  
+- *"As a user, I want to be able to browse reviews created by other users."*
+- *"As a user, I want to be directed to a site where I can buy a book."*
+- *"As a user, I want a site that is visually appealing."*  
+- *"As a user, I want a site that is easy to navigate."* 
+- *"As a user, I want a site that is intuitive."*  
+
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Technologies**
