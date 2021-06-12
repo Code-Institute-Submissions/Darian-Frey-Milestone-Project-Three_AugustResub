@@ -121,6 +121,37 @@ DateCreated datetime
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Deployment**
+
+The live project can be viewed [here](https://book-review-shane.herokuapp.com/).
+
+### Commiting to Github
+1. Using my terminal window I firstly use `git pull https://github.com/Darian-Frey/Milestone-Project-Three.git` to pull the most upto date version of my repository.
+2. Once upto date I edit everything I need to and use `git add .` to stage all the edited files for commiting.
+
+3. Using `git status` I usually view to see I have staged all the files I want to and I have no unwanted files being commited.
+4. Next using `git commit` I commit to the local Repository and then `git push` to finally push the changes to the master branch.
+
+### Deploying to Heroku
+1. Firstly I needed to go to my Account dashboard, here I can select New and Create New App.
+2. I chose a unique app name, the region of Europe and then pressed create app.
+3. Once Created I was brought to the deploy section of my app, here I decided to chose to deploy with Github.
+4. Heroku then asked for the repo name of my app I wished to deploy.
+5. I selected connect once my repo was found and I was then able to commit to the master branch on Github. 
+It will then Deploy Automatically as I have automatic deploys turned on.
+6. The site is almost deployed but I then needed to go to the settings section and let Heroku know of any enviroment variables such as the ip, Port, Secret key and database URI.
+
+### Cloning the repository
+To run this repository locally:
+1. Click "Code" at the top of this repository.
+2. Select Download Zip or Copy the URL to your clipboard. 
+3. Open up Terminal and select the location in which you wish to clone this directory.
+4. Then type `git clone` and copy `https://github.com/Darian-Frey/Milestone-Project-Three.git` 
+5. Press enter and you will have succesfully cloned this Repository. 
+
+### Installing dependencies
+Installing Dependencies is very simple and I have supplied a requirements.txt to help with this process. Once the repository has been cloned before it can be ran the user will need to open the terminal on their IDE and type `pip3 install -r requirements.txt`. All the dependencies should now download and you are ready to go.
+
+
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Credits & Acknowledgements**
