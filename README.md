@@ -37,17 +37,39 @@
 ## **Technologies**
 ##### [Back to Table of Contents](#table-of-contents)
 
+## **Technologies Used**
+
 The Technologies used in this project are listed bellow.
 
-- [QuickDBD](https://app.quickdatabasediagrams.com//)
-- [Materialize](https://materializecss.com/)
-- [HTML5](https://en.wikipedia.org/wiki/HTML5/)
-- [CSS3](https://en.wikipedia.org/wiki/CSS/)
+### **Languages**
+- **HTML** - used to create the structure of the application
+- **CSS** - used to position and style the application 
+- **JavaScript** - used to for interactivity
+- **Python** - used to handle backend
+- **Jinja** - Python templating language
+
+### **Libraries and Frameworks**
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
+- [Materialize CSS](https://materializecss.com/) 
+- [Google Fonts](https://fonts.google.com/) 
+- [Font Awesome](https://fontawesome.com/) 
+- [jQuery](https://code.jquery.com/) 
+
+### **Project Management**
+- [Git](https://git-scm.com/) 
+- [Gitpod](https://gitpod.io/) 
+- [Github](https://github.com/) 
+- [Heroku](https://signup.heroku.com)
 - [MongoDB](https://www.mongodb.com/)
-- [Heroku](https://www.heroku.com/)
-- [GitHub](https://github.com/Darian-Frey/)
-- [Gitpod](https://www.gitpod.io/)
-- [jQuery](https://jquery.com/)
+
+### **Tools**
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) 
+- [WireFrameSketcher](https://wireframesketcher.com/)
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Favicon](https://favicon.io/favicon-converter/) 
+- [Coolors](https://coolors.co/)
+
 
 ## **Design**
 ##### [Back to Table of Contents](#table-of-contents)
