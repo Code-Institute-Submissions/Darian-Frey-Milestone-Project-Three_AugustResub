@@ -32,6 +32,7 @@ main {
 
 .brand-logo {
     white-space: nowrap;
+    margin-left: 15px;
 }
 
 hr.divider {
@@ -59,4 +60,8 @@ body {
     width: 100%;
     max-width: 200px;
     height: auto;
+}
+
+.card-panel {
+    background-color: Gainsboro;
 }

@@ -78,7 +78,6 @@ To view the wireframes click [here](https://github.com/Darian-Frey/Milestone-Pro
 Wireframes created with [WireframeSketcher](https://wireframesketcher.com)
 
 ## **Database Models and Schema**
-##### [Back to Table of Contents](#table-of-contents)
 
 [QuickDBD](https://app.quickdatabasediagrams.com//)
 
@@ -108,6 +107,8 @@ DateCreated datetime
 
 <img src="Wireframes/quickdbd/QuickDBD.png"
      alt="Database design"/>
+
+##### [Back to Table of Contents](#table-of-contents)
 
 ## **Media**
 
