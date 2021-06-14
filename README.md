@@ -119,6 +119,29 @@ DateCreated datetime
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Features**
+
+The main features of the Reader's corner are,
+
+- A responsive design.
+- Responsive navigation bar.
+- Users can register an account.
+- Users can add their own reviews.
+- A user can read everyones reviews.
+- The user profile will show only the session users reviews.
+- Users can edit their reviews.
+- Users can delete their reviews.
+- Users can delete their account.
+- A buy me link will take the user to the books amazon page.
+- A footer with social media links.
+- A link to my Github in the footer.
+
+## **Future Features**
+
+- A review rating system. A user can give a 1 to 5 star rating to other peoples reviews.
+- A search function. The ability to search the reviews based on genre, user name, user rating, aurthor or book title.
+- Lost password recovery feature.
+
+
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Testing**
