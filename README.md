@@ -6,7 +6,6 @@
 - [UX](#UX)
 - [User Stories](#User-Stories)
 - [Technologies](#Technologies)
-- [Design](#Design)
 - [Wireframe](#Wireframe)
 - [Database Models and Schema](#Database-Models-and-Schema)
 - [Media](#Media)
@@ -36,8 +35,6 @@
 
 ## **Technologies**
 ##### [Back to Table of Contents](#table-of-contents)
-
-## **Technologies Used**
 
 The Technologies used in this project are listed bellow.
 
@@ -71,13 +68,10 @@ The Technologies used in this project are listed bellow.
 - [Coolors](https://coolors.co/)
 
 
-## **Design**
-##### [Back to Table of Contents](#table-of-contents)
-
 ## **Wireframe**
 
 The wireframes for this project do not represent the final project.
-To view the wireframes click [here](https://github.com/Darian-Frey/Milestone-Project-Three/tree/master/Wireframes/pdf) for PDF and [here](https://github.com/Darian-Frey/Milestone-Project-Three/tree/master/Wireframes/images) for PNG files.
+To view the wireframes click [here](https://github.com/Darian-Frey/Milestone-Project-Three/tree/master/Wireframes/pdf) for PDF and [here](Wireframes/images/wireframepng.md) for PNG files.
 
 ##### [Back to Table of Contents](#table-of-contents)
 
@@ -116,6 +110,9 @@ DateCreated datetime
      alt="Database design"/>
 
 ## **Media**
+
+The main background image is by Alfons Morales on [Unsplash](https://unsplash.com/).
+
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Features**
@@ -126,7 +123,7 @@ The main features of the Reader's corner are,
 - Responsive navigation bar.
 - Users can register an account.
 - Users can add their own reviews.
-- A user can read everyones reviews.
+- A user can read everyone's reviews.
 - The user profile will show only the session users reviews.
 - Users can edit their reviews.
 - Users can delete their reviews.
@@ -137,8 +134,8 @@ The main features of the Reader's corner are,
 
 ## **Future Features**
 
-- A review rating system. A user can give a 1 to 5 star rating to other peoples reviews.
-- A search function. The ability to search the reviews based on genre, user name, user rating, aurthor or book title.
+- A review rating system. A user can give a 1 to 5 star rating to other people's reviews.
+- A search function. The ability to search the reviews based on genre, user name, user rating, author or book title.
 - Lost password recovery feature.
 
 
