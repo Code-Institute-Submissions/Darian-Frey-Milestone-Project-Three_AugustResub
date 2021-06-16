@@ -22,7 +22,6 @@
 - *"As a user, I want to create my own reviews."* 
 - *"As a user, I want to easily access my own content."* 
 - *"As a user, I want to edit reviews I have created."*
-- *"As a user, I want to control my own content."*  
 - *"As a user, I want to be able to delete reviews I have created."*  
 - *"As a user, I want to be able to delete my account."*  
 - *"As a user, I want to be able to browse reviews created by other users."*
@@ -143,6 +142,9 @@ The main features of the Reader's corner are,
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Testing**
+
+Testing documentation can be found [HERE](static/testing/testing.md)
+
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Deployment**
