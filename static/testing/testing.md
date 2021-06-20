@@ -199,4 +199,55 @@ Responsive design was tested throughout the development using [DevTools](https:/
     - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation.
         - No errors found.
     - [W3C](https://validator.w3.org/) - HTML Markup Validation.
-        - 
+        - Shows many errors due to the fact I am using jinja2 templating which it does not recognise but other than the expected errors everything else passes.
+    - [PEP8 online](http://pep8online.com/) - PEP8 validator.
+        - No errors found.
+    - [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) - generated the below reports:
+
+    - **index.html**
+        - Performance: 89
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100
+
+    - **login.html**
+        - Performance: 92
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100
+
+    - **register.html**
+        - Performance: 89
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100
+
+    - **profile.html**
+        - Performance: 89
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100
+
+    - **index.html**
+        - Performance: 89
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100
+
+    - **index.html**
+        - Performance: 89
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100
+
+    - **index.html**
+        - Performance: 89
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100
+
+    - **index.html**
+        - Performance: 89
+        - Accessiblity: 92
+        - Best Practices: 87
+        - SEO: 100

@@ -28,17 +28,17 @@
                 <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">Log In <i
                         class="fas fa-sign-in-alt"></i></button>
             </div>
+            <hr class="divider" />
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center-align white-text-75">New here?
+                        Register <a href="{{  url_for('register')}}" class="light-blue-text text-darken-4">Here</a>
+                    </h4>
+                </div>
+            </div>
         </div>
     </form>
 </div>
 
-<div class="row">
-    <div class="col s12">
-        <h4 class="center-align white-text">
-            Register Here <a href="{{  url_for('register')}}" class="light-blue-text text-darken-4">Register New
-                Account</a>
-        </h4>
-    </div>
-</div>
 
 {% endblock %}
