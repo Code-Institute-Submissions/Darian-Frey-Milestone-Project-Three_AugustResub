@@ -5,7 +5,8 @@
 
 - [User Stories](#user-stories)
 - [Manual Testing of Navigation](#manual-testing-of-navigation)
-- [Responsiveness](#responsiveness)
+- [Responsiveness](#responsive-design)
+- [Code Validation](#code-validation)
 
 ---
 
@@ -190,7 +191,7 @@ This app was developed using the _Mobile First_ philosophy.
 
 Responsive design was tested throughout the development using [DevTools](https://developers.google.com/web/tools/chrome-devtools), [Am I Responsive](http://ami.responsivedesign.is/) and [Responsive Test Tool](http://responsivetesttool.com/)
 
-## **_Code Validation_**
+## **Code Validation**
 
 - Code validation was performed using the following tools.
     - [W3C](https://jigsaw.w3.org/css-validator/) - CSS Validation.
