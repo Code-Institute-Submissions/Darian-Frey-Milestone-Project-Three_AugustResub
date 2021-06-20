@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align">Edit this review</h3>
 <div class="row">
     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('editreview', booksid=books._id) }}">
         <div class="card-panel">
+            <h3 class="center-align white-text-75">Edit this review</h3>
             <!--Title-->
             <div class="row">
                 <div class="input-field col s12">

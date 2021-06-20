@@ -205,49 +205,43 @@ Responsive design was tested throughout the development using [DevTools](https:/
     - [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) - generated the below reports:
 
     - **index.html**
-        - Performance: 89
-        - Accessiblity: 92
-        - Best Practices: 87
+        - Performance: 92
+        - Accessiblity: 83
+        - Best Practices: 93
         - SEO: 100
 
     - **login.html**
-        - Performance: 92
+        - Performance: 93
         - Accessiblity: 92
-        - Best Practices: 87
-        - SEO: 100
+        - Best Practices: 93
+        - SEO: 89
 
     - **register.html**
-        - Performance: 89
+        - Performance: 92
         - Accessiblity: 92
-        - Best Practices: 87
+        - Best Practices: 93
         - SEO: 100
 
     - **profile.html**
-        - Performance: 89
-        - Accessiblity: 92
+        - Performance: 84
+        - Accessiblity: 86
+        - Best Practices: 93
+        - SEO: 100
+
+    - **allreviews.html**
+        - Performance: 81
+        - Accessiblity: 89
+        - Best Practices: 93
+        - SEO: 100
+
+    - **addreview.html**
+        - Performance: 85
+        - Accessiblity: 89
         - Best Practices: 87
         - SEO: 100
 
-    - **index.html**
-        - Performance: 89
-        - Accessiblity: 92
-        - Best Practices: 87
-        - SEO: 100
-
-    - **index.html**
-        - Performance: 89
-        - Accessiblity: 92
-        - Best Practices: 87
-        - SEO: 100
-
-    - **index.html**
-        - Performance: 89
-        - Accessiblity: 92
-        - Best Practices: 87
-        - SEO: 100
-
-    - **index.html**
-        - Performance: 89
-        - Accessiblity: 92
-        - Best Practices: 87
+    - **editreview.html**
+        - Performance: 82
+        - Accessiblity: 89
+        - Best Practices: 93
         - SEO: 100

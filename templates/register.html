@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="center-align blue-text">Register</h3>
 <div class="row">
     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
         <div class="card-panel">
+            <h3 class="center-align white-text-75">Register</h3>
             <!--Username-->
             <div class="row">
                 <div class="input-field col s12">
@@ -36,16 +36,17 @@
                 <button type="submit" class="col s12 btn-large light-blue darken-4 text-shadow">Register <i
                         class="fas fa-sign-in-alt"></i></button>
             </div>
+            <hr class="divider" />
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center-align white-text-75">
+                        Already Registerd? <a href="{{  url_for('login')}}" class="light-blue-text text-darken-4">Log
+                            In</a>
+                    </h4>
+                </div>
+            </div>
         </div>
     </form>
-</div>
-
-<div class="row">
-    <div class="col s12">
-        <h4 class="center-align white-text">
-            Already Registerd? <a href="{{  url_for('login')}}" class="light-blue-text text-darken-4">Log In</a>
-        </h4>
-    </div>
 </div>
 
 {% endblock %}
