@@ -18,7 +18,7 @@ The idea was to build a web app where users can share their favourite books thro
 - [Features](#Features)
 - [Testing](#Testing)
 - [Deployment](#Deployment)
-- [Credits & Acknowledgements](#Credits-&-Acknowledgements)
+- [Credits & Acknowledgements](#credits-&-acknowledgements)
 
 ## **UX**
 
