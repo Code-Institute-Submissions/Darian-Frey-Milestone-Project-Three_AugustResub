@@ -18,7 +18,7 @@ The idea was to build a web app where users can share their favourite books thro
 - [Features](#Features)
 - [Testing](#Testing)
 - [Deployment](#Deployment)
-- [Credits & Acknowledgements](#credits-&-acknowledgements)
+- [Credits and Acknowledgements](#credits-and-acknowledgements)
 
 ## **UX**
 
@@ -190,7 +190,7 @@ Installing Dependencies is very simple and I have supplied a requirements.txt to
 
 ##### [Back to Table of Contents](#table-of-contents)
 
-## **Credits & Acknowledgements**
+## **Credits and Acknowledgements**
 
 I would like to thank the following.
 - Excellence Ilesanmi for his support and advice through this project.
