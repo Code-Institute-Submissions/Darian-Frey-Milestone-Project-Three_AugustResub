@@ -131,3 +131,65 @@ to ensure correct functionality.
     - Allows user to delete their account
     - _'Delete Account'_ button:
         - Once pressed will delete the users account and redirect the user to the Home page.
+
+- **_Users Reviews_** 
+    - The Profile page will display all the users reviews, at the bottom of each review will be three buttons, Remove, Edit and Buy.
+    - _'Remove'_ button:
+        - On click will delete the current users review.
+        - Redirects user back to the users profile page.
+        - Flash message informs user "Review has been deleted"
+    - _'Edit'_ button:
+        - On click will directe the user to editreview.html.
+    - _'Buy'_ button:
+        - On click will direct the user to the onlins shop URL provided when the review was created.
+
+### **Allreviews.html** 
+- **_All reviews_**
+    - The Reviews page will display all reviews by all users.
+        - All reviews include the following information.
+            - Book cover
+            - Title
+            - Author
+            - Genre
+            - Sysnopsis
+            - Review
+            - Created by
+            - Created data
+            - Shop Link (Buy This Book)
+                - The "Buy This Book" link will redirect the user to the shop page setup during the creation of the review.
+
+- **_Addreview.html_**
+    - **_Add Review_**
+    - Contains a form for user to add review
+    - Allows user to add a review without having to navigate to profile page
+    - _Form Validation_ 
+        - All fields except _buy link_ and _cover image link_ must be completed to submit form 
+            - There are default values set up for these fields if the user leaves them blank 
+        - _'Save'_ button: 
+            - If form is not filled out correctly, user is informed to fill out missing field
+            - If form is filled out correctly, review is added to the database 
+                - profile.html is loaded
+                - Review is added to reviews.html
+        - _'Cancel'_ button:
+            - Redirects user back to profile.html
+
+### **Editreview.html**
+- **_Edit Review_**
+    - Contains a form for user to edit their own review
+    - Is popluated with the original infomation added by the user
+    - _Form Validation_ 
+        - All fields except _buy link_ and _cover image link_ must be completed to submit form 
+            - There are default values set up for these fields if the user leaves them blank 
+        - _'Save'_ button 
+            - If form is not filled out correctly, user is informed to fill out missing field
+            - If form is filled out correctly, review is updated in the database 
+                - Users profile is loaded
+        - _'Cancel'_ button 
+            - No changes to the form are saved
+            - Users profile is loaded
+
+## **Responsive Design**
+This app was developed using the _Mobile First_ philosophy.
+
+Responsive design was tested throughout the development using [DevTools](https://developers.google.com/web/tools/chrome-devtools)
+and [Am I Responsive](http://ami.responsivedesign.is/).
