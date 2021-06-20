@@ -39,7 +39,6 @@ The idea was to build a web app where users can share their favourite books thro
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Technologies**
-##### [Back to Table of Contents](#table-of-contents)
 
 The Technologies used in this project are listed bellow.
 
@@ -69,8 +68,11 @@ The Technologies used in this project are listed bellow.
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) 
 - [WireFrameSketcher](https://wireframesketcher.com/)
 - [Am I Responsive](http://ami.responsivedesign.is/)
-- [Favicon](https://favicon.io/favicon-converter/) 
+- [Responsive Test Tool](http://responsivetesttool.com/)
+- [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) 
 - [Coolors](https://coolors.co/)
+
+##### [Back to Table of Contents](#table-of-contents)
 
 
 ## **Wireframe**
@@ -143,6 +145,7 @@ The main features of the Reader's corner are,
 - A review rating system. A user can give a 1 to 5 star rating to other people's reviews.
 - A search function. The ability to search the reviews based on genre, user name, user rating, author or book title.
 - Lost password recovery feature.
+- Sort reviews, Alphabetically, by Genre, User ratings, by Author or by User
 
 
 ##### [Back to Table of Contents](#table-of-contents)
@@ -188,4 +191,14 @@ Installing Dependencies is very simple and I have supplied a requirements.txt to
 ##### [Back to Table of Contents](#table-of-contents)
 
 ## **Credits & Acknowledgements**
+
+I would like to thank the following.
+- Excellence Ilesanmi for his support and advice through this project.
+- [Code Institute](https://courses.codeinstitute.net/) for this excellent course.
+- [Materialize CSS](https://materializecss.com/), 
+[W3Schools](https://www.w3schools.com/), 
+[freecodecamp](https://www.freecodecamp.org/) 
+and [css-tricks](https://css-tricks.com/) for all the example code.
+- [Coolors](https://coolors.co/) for the colours and theme ideas
+
 ##### [Back to Table of Contents](#table-of-contents)
