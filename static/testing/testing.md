@@ -6,9 +6,6 @@
 - [User Stories](#user-stories)
 - [Manual Testing of Navigation](#manual-testing-of-navigation)
 - [Responsiveness](#responsiveness)
-- [Bugs and Issues](#bugs-and-issues)
-    - [Resolved](#resolved)
-    - [Existing](#existing)
 
 ---
 
@@ -245,3 +242,8 @@ Responsive design was tested throughout the development using [DevTools](https:/
         - Accessiblity: 89
         - Best Practices: 93
         - SEO: 100
+
+
+#### [**Table of Contents**](#table-of-contents)
+---
+#### Back to [Read me](README.md)

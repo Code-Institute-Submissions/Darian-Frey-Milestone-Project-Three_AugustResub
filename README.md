@@ -1,6 +1,12 @@
 
 # Milestone Project 3
 
+## **Introduction**
+
+The Readers Corner is my third project with Code Institute to the knowledge I have gained in Python3, Databases such as MongoDB and Frameworks like Flask.<br>
+I have followed the CRUD from (Create, Read, Update, Delete) to create a web app where users can register, login, read reviews, add reviews, edit reviews, delete reviews, log out and delete their account.<br>
+The idea was to build a web app where users can share their favourite books through book reviews.
+
 ## [**Table of Contents**](#table-of-contents)
 
 - [UX](#UX)
