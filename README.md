@@ -145,8 +145,8 @@ The main features of the Reader's corner are,
 - A review rating system. A user can give a 1 to 5 star rating to other people's reviews.
 - A search function. The ability to search the reviews based on genre, user name, user rating, author or book title.
 - Lost password recovery feature.
-- Sort reviews, Alphabetically, by Genre, User ratings, by Author or by User
-
+- Sort reviews, Alphabetically, by Genre, User ratings, by Author or by User.
+- Add reviews to a favourites list
 
 ##### [Back to Table of Contents](#table-of-contents)
 
